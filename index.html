@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3a7f3d5633.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <div id="header">
+      <div class="container">
+        <nav>
+            <img src="MYIMAGES/LOGO.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+               <!---<i class="fa-solid fa-circle-xmark"></i>-->
+            </ul>
+            <!---<<i class="fa-solid fa-caret-left"></i>---->
+        </nav>
+        <div class="header-text">
+            <p>CS Student</p>
+            <h1>Hi, I'm <span>Nandwa</span>,<br>a student</h1>   
+
+        </div> 
+      </div> 
+ </div>  
+ <!-- ------------about-------------->
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="MYIMAGES/mee.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="titlesub">About Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus 
+                    voluptatibus quisquam quos perferendis! Rem dolores, ratione
+                     pariatur sunt quae facere blanditiis harum inventore veritatis
+                      beatae suscipit hic officia id doloribus.</p>
+
+                      <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                      </div>
+                      <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Developer</span><br>Designing web applications.</li>
+                        </ul>
+                      </div>
+                      <div class="tab-contents" id=""experience>
+                        <ul>
+                            <li><span>2004-Current</span><br>Experience in real life.</li>
+                        </ul>
+                      </div>
+                      <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>Dedan Kimathi University.</li>
+                        </ul>
+                      </div>
+            </div>
+                
+        </div>
+    </div>
+ </div> 
+ <!--------------------services-------------------> 
+ <div id="services">
+    <div class="container">
+        <h1 class="titlesub">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Designing</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse 
+                    maxime sapiente excepturi ullam soluta quos 
+                    quis reiciendis, rem earum sit aperiam aliquam corporis? Harum corrupti, magnam 
+                    nulla quaerat sapiente molestias.</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-intercom"></i>    
+                <h2>Application Developer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse 
+                    maxime sapiente excepturi ullam soluta quos 
+                    quis reiciendis, rem earum sit aperiam aliquam corporis? Harum corrupti, magnam 
+                    nulla quaerat sapiente molestias.</p>
+                    <a href="#">Learn more</a>    
+            </div>
+            
+        </div>
+    </div>
+
+ </div>
+ <!-------------------portfolio-------------------->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="titlesub">My Work</h1>
+        <div class="worklist">
+            <div class="work">
+                <img src="MYIMAGES/Mainwebpage.png">
+                <div class="layer">
+                    <h3>Website page</h3>
+                    <p>The website explains more about Nandwa.Access 
+                        it on any search engine platform</p>
+                        <a href="#"><i class="fa-solid fa-paperclip"></i></a>
+                </div>
+              <div class="work">
+                    <img src="MYIMAGES/game.png">
+                 <div class="layer">
+                        <h3>Basic game</h3>
+                        <p>One of the most basic games you will find</p>
+                          <a href="#"><i class="fa-solid fa-paperclip"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+</div> 
+<!--------------------contact------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="titlesub">Contact Me</h1>
+                <P><i class="fa-regular fa-paper-plane"></i>churchilj4@gmail.com</P>
+                <p><i class="fa-solid fa-mobile"></i>0701074164</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="MYIMAGES/mycv.docx" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit to google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Nandwa. Made with <i class="fa-solid fa-heart"></i> Nash's intellect</p>
+    </div>
+</div>   
+
+ 
+
+ 
+ <script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tablinks = document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+<script>
+    const scriptURL = 'https: //script.google.com/macros/s/AKfycbwqwoalwPpoDHUwdSUQmO8Ua-rK_7SZkW7z-BMSA24vFAO0O99ojQQG6qf7UMtZbISS/exec'
+    const form = document.forms['submit to google-sheet']
+    const msg = getElementById("msg")
+
+    form.addeventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, {method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!',error.message))
+    })
+</script>
+
+
+</body>
+</html> 
+
+
